@@ -12,7 +12,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect('mongodb+srv://<linkaqui>', { 
+mongoose.connect('mongodb+srv://', { 
     useNewUrlParser: true,
     useUnifiedTopology: true, 
 });

@@ -16,7 +16,7 @@ const SpotShema = new mongoose.Schema({
  });
 
  SpotShema.virtual('thumbnail_url').get(function() {
-     return `http://192.168.0.6:3333/files/${this.thumbnail}` 
- })
+     return `https://jailsonk8-nkp2.localhost.run/files/${this.thumbnail}`; 
+ });
 
 module.exports = mongoose.model('Spot', SpotShema);

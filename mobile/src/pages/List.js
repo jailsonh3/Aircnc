@@ -12,7 +12,7 @@ export default function List({ navigation }) {
 
     useEffect(() => {
         AsyncStorage.getItem('user').then(user_id => {
-            const socket = socketio('http://192.168.0.6:3333', {
+            const socket = socketio('https://jailsonk8-nkp2.localhost.run', {
                 query: { user_id },
             });
 
